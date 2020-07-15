@@ -15,5 +15,6 @@ Browser("arvato CSDB").Page("arvato CSDB").WebCheckBox("WebCheckBox").Set "ON" @
 Browser("arvato CSDB").Page("arvato CSDB").WebElement("DE-001 Auftragsbasierte").Click
 Browser("arvato CSDB").Page("arvato CSDB").WebButton("Speichern").Click @@ script infofile_;_ZIP::ssf13.xml_;_
 Browser("arvato CSDB").Page("arvato CSDB").WebElement("Abmelden").Click
-Browser("arvato CSDB").Page("arvato CSDB").WebElement("DE-001 Auftragsbasierte_2").Click
+
+set rolechilds = Browser("arvato CSDB").Page("arvato CSDB").WebElement("DE-001 Auftragsbasierte_2").ChildObjects(rolecheckbox)
 
